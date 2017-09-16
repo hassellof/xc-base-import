@@ -2,6 +2,12 @@
 
 xc-base-import is a [Node.js](http://nodejs.org) tool that allows to import development language XLIFF files straight into the IB documents (storyboards and xibs).
 
+## Changelog
+
+#### v0.0.2
+- The tool uses a different XML handling engine.
+- Now IB documents are not affected more than necessary.
+
 # Discussion
 
 In iOS7 Apple introduced so-called "Base localization" which allowed to keep the translation separate from the layout. With this approach you create storyboards and put the user-visible strings in the development language (usually English) straight into them. And when the time for the translation comes, you simply export an hand over to the translators a single XLIFF file, which, when imported, produces .strings files for the new language. This is extremely cool and I suggest every iOS developer to use it. ([More info](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPInternational/InternationalizingYourUserInterface/InternationalizingYourUserInterface.html))
@@ -35,7 +41,6 @@ I'm an iOS developer and sort of new to Node.js, so the code may not follow any 
 # Known issues
 
 - Currently only XLIFF files with the `source-language` and `target-language` of `en` work.
-- The tool is using [elementtree](https://www.npmjs.com/package/elementtree) for XML parsing, and it handles things a bit different from Xcode, so after you apply the tool most likely all the interface files will be changed (not broken though). Take it into consideration when working in a team as it may lead to a bad headache and deep frustration when merging.
 
 # Credits
 
