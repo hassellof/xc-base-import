@@ -8,7 +8,7 @@ In iOS7 Apple introduced so-called "Base localization" which allowed to keep the
 
 But it soon turned out that this straightforward approach can only be used for the languages, different from the development one. If you want to change something in English, you still need to open the storyboard with Xcode and manually introduce the changes. Not that cool, huh?
 
-If you decide to import a en-to-en XLIFF file, it produces a separate "en" localization, breaking the whole idea of Base localzation and also leading to a certain number of problems, which is out of scope of this document.
+If you decide to import a en-to-en XLIFF file, it produces a separate "en" localization, breaking the whole idea of Base localization and also leading to a certain number of problems, which is out of scope of this document.
 
 `xc-base-import` module allows to apply the XLIFF files straight to the IB documents, solving this problem. It also integrates nicely with the [PhraseApp](http://phraseapp.com/), which your localizers are very likely using. You just export an `en` localization file, put it into this tool and that's it!
 
@@ -16,7 +16,7 @@ What the tool does is it looks into the XLIFF file, finds all the entries, that 
 
 # Installation
 
-    $ npm install xc-base-import
+    $ npm install -g xc-base-import
 
 # Usage
 
