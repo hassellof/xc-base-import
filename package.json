@@ -1,7 +1,7 @@
 {
   "name": "xc-base-import",
-  "version": "1.0.0",
-  "description": "A tool that allows to import development language xliff files straight into the IB documents (storyboards and xibs)",
+  "version": "0.0.1",
+  "description": "A tool that allows to import development language XLIFF files straight into the IB documents (storyboards and xibs)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,8 +20,16 @@
   ],
   "author": "Daniil Konoplev",
   "license": "MIT",
+  "bin": {
+    "xc-base-import": "./index.js"
+  },
   "bugs": {
     "url": "https://github.com/ombori/xc-base-import/issues"
   },
-  "homepage": "https://github.com/ombori/xc-base-import#readme"
+  "homepage": "https://github.com/ombori/xc-base-import#readme",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "elementtree": "^0.1.7",
+    "winston": "^2.3.1"
+  }
 }
