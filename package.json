@@ -29,6 +29,7 @@
   "homepage": "https://github.com/ombori/xc-base-import#readme",
   "dependencies": {
     "commander": "^2.11.0",
-    "elementtree": "^0.1.7"
+    "elementtree": "^0.1.7",
+    "winston": "^2.3.1"
   }
 }
