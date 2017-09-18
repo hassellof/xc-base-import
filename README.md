@@ -38,6 +38,11 @@ This is a BETA tool, so use it at your own risk. Support with the development is
 
 I'm an iOS developer and sort of new to Node.js, so the code may not follow any of the existing guidelines or best practices, feel free to send pull requests, I will most likely accept it.
 
+# TODO
+
+- Parse the project file to find the development language (currently hard-coded to `en`);
+- Apply the [dev_lang].xliff not only to the IB files, but to other resources, like InfoPlist.strings or Localizable.strings, so that no additional manual steps are required (currently you will need to import the XLIFF using Xcode first, commit changes to the non-IB files, like Localizable.strings, revert the rest and then apply this tool).
+
 # Known issues
 
 - Currently only XLIFF files with the `source-language` and `target-language` of `en` work.
