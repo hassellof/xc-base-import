@@ -1,6 +1,6 @@
 {
   "name": "xc-base-import",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tool that allows to import development language XLIFF files straight into the IB documents (storyboards and xibs)",
   "main": "index.js",
   "scripts": {
